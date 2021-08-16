@@ -1,0 +1,16 @@
+PODS:
+  - BSImagePicker (3.3.1)
+
+DEPENDENCIES:
+  - BSImagePicker (from `../`)
+
+EXTERNAL SOURCES:
+  BSImagePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BSImagePicker: 0fe04b574d4d6b81093785d2af6c26227efc8428
+
+PODFILE CHECKSUM: 0dc3046a55de94420e236e80077c9c17ee19ae79
+
+COCOAPODS: 1.10.1
