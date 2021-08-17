@@ -98,6 +98,9 @@ import Photos
                 return 3
             }
         }
+        
+        /// Size of cell for Horizontal List
+        public lazy var cellSize: CGSize = CGSize(width: 50, height: 50)
     }
 
     public class Preview : NSObject {
