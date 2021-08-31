@@ -23,6 +23,7 @@
 import Foundation
 import Photos
 
+@available(iOS 10.0, *)
 extension ImagePickerController: AssetsViewControllerDelegate {
     func assetsViewController(_ assetsViewController: AssetsViewController, didSelectAsset asset: PHAsset) {
         if settings.selection.unselectOnReachingMax && assetStore.count > settings.selection.max {

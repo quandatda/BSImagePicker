@@ -24,6 +24,7 @@ import Foundation
 import Photos
 
 class PreviewBuilder {
+    @available(iOS 9.1, *)
     static func createPreviewController(for asset: PHAsset, with settings: Settings) -> PreviewViewController {
         switch (asset.mediaType, asset.mediaSubtypes) {
         case (.video, _):

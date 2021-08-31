@@ -67,7 +67,11 @@ class VideoPreviewViewController: PreviewViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+        if #available(iOS 10.0, *) {
+            try? AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+        } else {
+            // Fallback on earlier versions
+        }
 
         pauseBarButton = UIBarButtonItem(barButtonSystemItem: .pause, target: self, action: #selector(pausePressed(sender:)))
         playBarButton = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(playPressed(sender:)))

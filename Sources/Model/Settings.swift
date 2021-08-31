@@ -172,6 +172,7 @@ import Photos
                 return options
             }()
 
+            @available(iOS 9.1, *)
             public lazy var livePhotoOptions: PHLivePhotoRequestOptions = {
                 let options = PHLivePhotoRequestOptions()
                 options.isNetworkAccessAllowed = true

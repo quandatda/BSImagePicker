@@ -23,6 +23,7 @@
 import UIKit
 import PhotosUI
 
+@available(iOS 9.1, *)
 class LivePreviewViewController: PreviewViewController {
     private let imageManager = PHCachingImageManager.default()
     private let livePhotoView = PHLivePhotoView()
@@ -89,6 +90,7 @@ class LivePreviewViewController: PreviewViewController {
     }
 }
 
+@available(iOS 9.1, *)
 extension LivePreviewViewController: PHLivePhotoViewDelegate {
     func livePhotoView(_ livePhotoView: PHLivePhotoView, willBeginPlaybackWith playbackStyle: PHLivePhotoViewPlaybackStyle) {
         // Hide badge view if we aren't in fullscreen

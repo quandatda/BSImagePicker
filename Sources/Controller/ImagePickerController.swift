@@ -24,6 +24,7 @@ import UIKit
 import Photos
 
 // MARK: ImagePickerController
+@available(iOS 10.0, *)
 @objc(BSImagePickerController)
 @objcMembers open class ImagePickerController: UINavigationController {
     // MARK: Public properties

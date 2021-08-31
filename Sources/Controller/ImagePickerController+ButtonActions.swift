@@ -22,6 +22,7 @@
 
 import UIKit
 
+@available(iOS 10.0, *)
 extension ImagePickerController {
     @objc func albumsButtonPressed(_ sender: UIButton) {
         albumsViewController.albums = albums

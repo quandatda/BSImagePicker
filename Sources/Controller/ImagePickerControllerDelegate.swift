@@ -24,6 +24,7 @@ import Foundation
 import Photos
 
 /// Delegate of the image picker
+@available(iOS 10.0, *)
 public protocol ImagePickerControllerDelegate: class {
     /// An asset was selected
     /// - Parameter imagePicker: The image picker that asset was selected in

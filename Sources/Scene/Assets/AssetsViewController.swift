@@ -23,12 +23,14 @@
 import UIKit
 import Photos
 
+@available(iOS 10.0, *)
 protocol AssetsViewControllerDelegate: class {
     func assetsViewController(_ assetsViewController: AssetsViewController, didSelectAsset asset: PHAsset)
     func assetsViewController(_ assetsViewController: AssetsViewController, didDeselectAsset asset: PHAsset)
     func assetsViewController(_ assetsViewController: AssetsViewController, didLongPressCell cell: AssetCollectionViewCell, displayingAsset asset: PHAsset)
 }
 
+@available(iOS 10.0, *)
 class AssetsViewController: UIViewController {
     weak var delegate: AssetsViewControllerDelegate?
     var settings: Settings! {
@@ -172,6 +174,7 @@ class AssetsViewController: UIViewController {
     }
 }
 
+@available(iOS 10.0, *)
 extension AssetsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectionFeedback.selectionChanged()
@@ -203,6 +206,7 @@ extension AssetsViewController: UICollectionViewDelegate {
     }
 }
 
+@available(iOS 10.0, *)
 extension AssetsViewController: PHPhotoLibraryChangeObserver {
     func photoLibraryDidChange(_ changeInstance: PHChange) {
         guard let changes = changeInstance.changeDetails(for: fetchResult) else { return }

@@ -23,6 +23,7 @@
 import Foundation
 import Photos
 
+@available(iOS 10.0, *)
 extension ImagePickerController: AlbumsViewControllerDelegate {
     func didDismissAlbumsViewController(_ albumsViewController: AlbumsViewController) {
         rotateButtonArrow()

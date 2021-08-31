@@ -94,8 +94,8 @@
             filePath = "Sources/Scene/Assets/AssetsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
             landmarkName = "updateCollectionViewLayout(for:)"
             landmarkType = "7">
             <Locations>

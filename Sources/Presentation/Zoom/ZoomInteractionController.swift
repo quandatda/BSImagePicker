@@ -34,7 +34,11 @@ class ZoomInteractionController: UIPercentDrivenInteractiveTransition, UIGesture
     
     override init() {
         super.init()
-        wantsInteractiveStart = false
+        if #available(iOS 10.0, *) {
+            wantsInteractiveStart = false
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     override func startInteractiveTransition(_ transitionContext: UIViewControllerContextTransitioning) {

@@ -37,6 +37,7 @@ import Photos
     ///   - cancel: Cancel callback
     ///   - finish: Finish callback
     ///   - completion: Presentation completion callback
+    @available(iOS 10.0, *)
     public func presentImagePicker(_ imagePicker: ImagePickerController, animated: Bool = true, select: ((_ asset: PHAsset) -> Void)?, deselect: ((_ asset: PHAsset) -> Void)?, cancel: (([PHAsset]) -> Void)?, finish: (([PHAsset]) -> Void)?, completion: (() -> Void)? = nil) {
         authorize {
             // Set closures
@@ -65,6 +66,7 @@ import Photos
     }
 }
 
+@available(iOS 10.0, *)
 extension ImagePickerController {
     public static var currentAuthorization : PHAuthorizationStatus {
         return PHPhotoLibrary.authorizationStatus()
@@ -72,6 +74,7 @@ extension ImagePickerController {
 }
 
 /// ImagePickerControllerDelegate closure wrapper
+@available(iOS 10.0, *)
 extension ImagePickerController: ImagePickerControllerDelegate {
     public func imagePicker(_ imagePicker: ImagePickerController, didSelectAsset asset: PHAsset) {
         onSelection?(asset)
